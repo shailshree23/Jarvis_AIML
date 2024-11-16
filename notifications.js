@@ -4,7 +4,7 @@ const admin = require('firebase-admin');
 
 // Initialize Firebase Admin SDK
 admin.initializeApp({
-    credential: admin.credential.applicationDefault(),
+    credential: admin.credential.cert('./firebase-adminsdk.json'),
 });
 
 // API Endpoint to Send Notification
